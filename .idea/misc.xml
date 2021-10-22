@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/activity_cible.xml" value="0.17831813576494426" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/activity_course.xml" value="0.1" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/activity_hello.xml" value="0.10185185185185185" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/article_liste.xml" value="0.1" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/cell_cards.xml" value="0.25" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/fragment_one.xml" value="0.2558876811594203" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/fragment_two.xml" value="0.14792299898682879" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/mon_spinner.xml" value="0.22916666666666666" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/layout/presentation_ligne.xml" value="0.1" />
+        <entry key="..\:/cours/MyApplication2/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

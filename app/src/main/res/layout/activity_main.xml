@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:isScrollContainer="true"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:title="mon menu"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <!-- <TextView
+         android:id="@+id/tv_nom"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/titre_nom"
+         android:textAppearance="?android:textAppearanceLarge" />
+
+     <EditText
+         android:id="@+id/et_nom"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/tv_nom" />
+
+     <TextView
+         android:id="@+id/tv_prenom"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/et_nom"
+         android:text="@string/titre_prenom"
+         android:textAppearance="?android:textAppearanceLarge" />
+
+     <EditText
+         android:id="@+id/et_prenom"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/tv_prenom" />
+
+     <CheckBox
+         android:id="@+id/cb_majeur"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/et_prenom"
+         android:layout_alignParentEnd="true"
+         android:text="@string/titre_majeur" />
+
+     <Button
+         android:id="@+id/btn_valider"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/cb_majeur"
+         android:text="@string/titre_valider" />
+
+
+     <GridLayout
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_weight="1"
+         android:columnCount="2"
+         android:rowCount="2">
+
+         <TextView
+             android:id="@+id/tv_1"
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:layout_rowSpan="2"
+             android:text="UN"
+             android:background="#ff0000"
+             android:textColor="#ffffff"
+             android:gravity="center"
+             android:layout_margin="5dp"
+             />
+
+         <TextView
+             android:id="@+id/tv_2"
+             android:layout_height="100dp"
+             android:text="DEUX"
+             android:background="#555555"
+             android:textColor="#ffffff"
+             android:gravity="right|center_vertical"
+             android:layout_gravity="fill"
+             android:drawableLeft="@mipmap/ic_launcher"
+             android:layout_margin="5dp"
+             />
+
+         <TextView
+             android:id="@+id/tv_3"
+             android:text="TROIS"
+             android:background="#00ff00"
+             android:textColor="#000000"
+             tools:ignore="HardcodedText"
+             android:layout_gravity="fill"
+             android:gravity="bottom|right"
+             android:layout_margin="5dp"
+             />
+     </GridLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_weight="1">
+
+         <Button
+             android:id="@+id/bnt_1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Bouton 1" />
+
+         <Button
+             android:id="@+id/bnt_2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:text="Bouton 2" />
+
+         <Button
+             android:id="@+id/bnt_3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/bnt_1"
+             android:layout_marginLeft="80dp"
+             android:text="Bouton 3" />
+
+         <Button
+             android:id="@+id/bnt_4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/bnt_2"
+             android:layout_alignParentEnd="true"
+             android:layout_marginRight="80dp"
+             android:text="Bouton 4" />
+
+         <Button
+             android:id="@+id/bnt_5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/bnt_3"
+             android:layout_centerHorizontal="true"
+             android:text="Bouton 5" />
+
+
+     </RelativeLayout>-->
+    <ProgressBar
+        android:id="@+id/pd_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="10"
+        android:progress="0"
+        android:layout_below="@id/toolBar"
+        android:visibility="visible"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/pd_demo"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/ma_liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycle_view"
+        android:layout_marginTop="-53dp" />
+
+    <fragment
+        android:id="@+id/fragment_un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ma_liste"
+        android:name="fr.cours.myapplication.Fragment.MonFragment"/>
+
+    <fragment
+        android:id="@+id/fragment_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_un"
+        android:name="fr.cours.myapplication.Fragment.MonFragmentDeux"/>
+
+    <Button
+        android:id="@+id/btn_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:layout_below="@+id/fragment_two"
+        android:onClick="onClickHello"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_net"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hello"
+        android:onClick="onClickBouton"
+        android:src="@drawable/internet" />
+
+    <ToggleButton
+        android:id="@+id/btn_achete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hello"
+        android:layout_alignParentEnd="true"
+        android:onClick="onclickAchat"
+        android:textOff="A acheté"
+        android:textOn="Acheté" />
+    <Button
+        android:id="@+id/bnt_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hello"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickSms"
+        android:text="Send SMS"
+        />
+     <TextView
+         android:id="@+id/tv_intra"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="activité intra"
+         android:layout_below="@id/bt_net"
+         android:textAppearance="?android:textAppearanceLarge" />
+
+      <EditText
+          android:id="@+id/et_intra"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_intra" />
+      <Button
+          android:id="@+id/btn_intra"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bouton intra"
+          android:onClick="onClickintra"
+          android:layout_below="@id/et_intra"/>
+
+       <TextView
+           android:id="@+id/tv_inter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="activité inter"
+           android:layout_below="@id/btn_intra"
+           android:textAppearance="?android:textAppearanceLarge" />
+
+       <EditText
+           android:id="@+id/et_inter"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_inter" />
+       <Button
+           android:id="@+id/btn_inter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Bouton inter"
+           android:onClick="onClickinter"
+           android:layout_below="@id/et_inter"/>
+       <Button
+           android:id="@+id/btn_cible"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Bouton cilbe"
+           android:onClick="onClickCibleActivity"
+           android:layout_alignParentEnd="true"
+           android:layout_below="@id/et_inter"/>
+     <Button
+         android:id="@+id/btn_read"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Read"
+         android:onClick="onClickRead"
+         android:layout_below="@id/bt_net"/>
+     <Button
+         android:id="@+id/btn_save"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Save"
+         android:onClick="onClickSave"
+         android:layout_alignParentEnd="true"
+         android:layout_below="@id/bt_net"/>
+    <Button
+        android:id="@+id/btn_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="async"
+        android:onClick="onClickAsync"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bt_net"/>
+
+    <!--spinner permet de recup les contact-->
+
+    <Spinner
+        android:id="@+id/spinner_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/Ma_Web_View"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btn_read"
+        android:scrollbars="vertical" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Ma_Web_View"/>
+
+
+ </RelativeLayout>
